@@ -1,6 +1,2 @@
-begin;
-
-select AVG(precio_unitario) as "precio_promedio"
+select ROUND(AVG(precio_unitario), 2) as "precio_promedio"
 from producto; 
-
-commit;
